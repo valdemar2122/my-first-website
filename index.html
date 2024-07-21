@@ -1,92 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-<!-- Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header-->
     <header>
-        
-<div class="container">
-    <nav class="site-nav">
-        <a href="index.html" class="logo-text link"><span class="logo">Web</span>Studio</a>
+      <div class="container">
+        <nav class="site-nav">
+          <a href="index.html" class="logo-text link"
+            ><span class="logo">Web</span>Studio</a
+          >
 
-        <ul class="main-nav list">
+          <ul class="main-nav list">
             <li class="item"><a href="./index.html" class="link">Studio</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-            <li class="item"><a href=""class="link">Contacts</a></li>
-        </ul>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li class="item"><a href="" class="link">Contacts</a></li>
+          </ul>
 
-        <ul class="contact-info list">
-            <li class="item"> <a href="" class="link">info@devstudio.com</a></li>
-            <li class="item"> <a href="" class="link">+11 (000) 111-11-11</a></li>
-        </ul>
-    </nav>
-</div>
-        
+          <ul class="contact-info list">
+            <li class="item"><a href="" class="link">info@devstudio.com</a></li>
+            <li class="item">
+              <a href="" class="link">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-<!-- Hero-->
-    <main>      
-        <section class="hero">
-            <div class="container">
-                <h1 class="title">Effective Solutions<br />for Your Business</h1>
-                <a href="" class="hero-button link">Order Service</a>
-            </div>
-        </section>
+    <!-- Hero-->
+    <main>
+      <section class="hero overlay">
+        <div class="container hero-content">
+          <h1 class="title">Effective Solutions<br />for Your Business</h1>
+          <a href="" class="hero-button link">Order Service</a>
+        </div>
+      </section>
 
+      <section class="section no-padding about">
+        <div class="container">
+          <ul class="features-list list">
+            <li class="item">
+              <h3 class="title">Strategy</h3>
+              <p class="text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
 
-        <section class="section no-padding about">
-            <div class="container">
-                <ul class="features-list list">
-                    <li class="item"><h3 class="title">Strategy</h3><p class="text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p></li>
-                    
-                    <li class="item"><h3 class="title">Punctuality</h3><p class="text">Bring the key message to the brand's audience for the best price within the shortest possible time. </p></li>
-                    
-                    <li class="item"><h3 class="title">Diligence</h3><p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p></li>
-                    
-                    <li class="item"><h3 class="title">Technologies</h3><p class="text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p></li>
-                </ul>
-            </div>
-        </section>
+            <li class="item">
+              <h3 class="title">Punctuality</h3>
+              <p class="text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
 
-        <section class="section no-padding">
-            <div class="container">
-                <h2 class="section-title">What are we doing</h2>
-                <ul class="devices list">
-                    <li class="item"><img src="./images/img1.jpg" alt="PC display"></li>
-                    <li class="item"><img src="./images/img2.jpg" alt="smartphone"></li>
-                    <li class="item"><img src="./images/img3.jpg" alt="smartphone"></li>
-                </ul>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">Our Team</h2>
-                <ul class="workers list">
-                    <li class="item"><div class="card"><img src="./images/worker1.jpg" alt="worker"><div class="worker-card"><h3 class="title">Mark Guerrero</h3><p class="text">Product Designer</p></div></div></li>
-                    <li class="item"><div class="card"><img src="./images/worker2.jpg" alt="worker"><div class="worker-card"><h3 class="title">Tom Ford</h3><p class="text">Frontend Developer</p></div></div></li>
-                    <li class="item"><div class="card"><img src="./images/worker3.jpg" alt="worker"><div class="worker-card"><h3 class="title">Camila Garcia</h3><p class="text">Marketing</p></div></div></li>
-                    <li class="item"><div class="card"><img src="./images/worker4.jpg" alt="worker"><div class="worker-card"><h3 class="title">Daniel Wilson</h3><p class="text">UI Designer</p></div></div></li>
-                </ul>
-            </div>
-        </section>
+            <li class="item">
+              <h3 class="title">Diligence</h3>
+              <p class="text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+
+            <li class="item">
+              <h3 class="title">Technologies</h3>
+              <p class="text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section no-padding">
+        <div class="container">
+          <h2 class="section-title">What are we doing</h2>
+          <ul class="devices list">
+            <li class="item">
+              <img src="./images/img1.jpg" alt="PC display" />
+            </li>
+            <li class="item">
+              <img src="./images/img2.jpg" alt="smartphone" />
+            </li>
+            <li class="item">
+              <img src="./images/img3.jpg" alt="smartphone" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section workers">
+        <div class="container">
+          <h2 class="section-title">Our Team</h2>
+          <ul class="workers list">
+            <li class="item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img src="./images/worker1.jpg" alt="worker" />
+                </div>
+                <div class="worker-card">
+                  <h3 class="title">Mark Guerrero</h3>
+                  <p class="text">Product Designer</p>
+                  <div class="social-icons">
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img src="./images/worker2.jpg" alt="worker" />
+                </div>
+                <div class="worker-card">
+                  <h3 class="title">Tom Ford</h3>
+                  <p class="text">Frontend Developer</p>
+                  <div class="social-icons">
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img src="./images/worker3.jpg" alt="worker" />
+                </div>
+                <div class="worker-card">
+                  <h3 class="title">Camila Garcia</h3>
+                  <p class="text">Marketing</p>
+                  <div class="social-icons">
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img src="./images/worker4.jpg" alt="worker" />
+                </div>
+                <div class="worker-card">
+                  <h3 class="title">Daniel Wilson</h3>
+                  <p class="text">UI Designer</p>
+                  <div class="social-icons">
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                    <a href="" class="icon-socialmedia"></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section customers no-padding">
+        <div class="container">
+          <h2 class="section-title">Customers</h2>
+          <div class="customers-icons">
+            <a href="" class="icon-customer"></a>
+            <a href="" class="icon-customer"></a>
+            <a href="" class="icon-customer"></a>
+            <a href="" class="icon-customer"></a>
+            <a href="" class="icon-customer"></a>
+            <a href="" class="icon-customer"></a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-description">
-                <a href="index.html" class="logo-text-footer link"><span class="logo">Web</span>Studio</a>
-                <p class="text">Increase the flow of customers and<br>sales for your business with digital<br>marketing & growth solutions.</p>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-description">
+            <a href="index.html" class="logo-text-footer link"
+              ><span class="logo">Web</span>Studio</a
+            >
+            <p class="text">
+              Increase the flow of customers and<br />sales for your business
+              with digital<br />marketing & growth solutions.
+            </p>
+          </div>
+          <div class="contacts">
+            <h3 class="title">Social media</h3>
+            <div class="social-icons">
+              <a href="" class="icon-socialmedia"></a>
+              <a href="" class="icon-socialmedia"></a>
+              <a href="" class="icon-socialmedia"></a>
+              <a href="" class="icon-socialmedia"></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
