@@ -7,6 +7,8 @@
   --grey-text-color: #f4f4fd;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --close-button-modal: #e7e9fc;
+  --close-button-border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -55,6 +57,12 @@ svg {
 
 /* HEADER */
 
+header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .site-nav .link {
   display: block;
   color: var(--accent-color);
@@ -93,6 +101,22 @@ svg {
 
 .contact-info .item + .item {
   margin-left: 40px;
+}
+
+.main-nav .link {
+  position: relative;
+}
+
+.main-nav .link.current-page::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px; /* Adjust as needed */
+  transform: translateX(-50%);
+  width: 100%;
+  height: 4px;
+  background-color: #4d5ae5;
+  border-radius: 2px;
 }
 
 .features-list {
@@ -232,6 +256,7 @@ svg {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  border: none;
 }
 
 .hero .hero-content {
@@ -321,7 +346,8 @@ svg {
 /* Buttons hover and focus(page Portfolio) */
 
 .filters .button {
-  border: none;
+  border: 1px solid var(--close-button-modal);
+  border-radius: 4px;
   margin: 0;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -336,6 +362,46 @@ svg {
 .filters .button:focus {
   background-color: var(--button-purple-color);
   color: var(--grey-text-color);
+  border: 0;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.img-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.examples .img-thumb::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: var(--button-purple-color);
+  transform: translateY(+100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.examples:hover .img-thumb::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+.examples .card-description.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(+200%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.examples:hover .card-description.text {
+  position: absolute;
+  top: 40px;
+  left: 32px;
+  right: 32px;
+  opacity: 1;
+  color: var(--white-color);
+  transform: translateY(0);
 }
 
 /* FOOTER */
@@ -399,6 +465,10 @@ svg {
   margin-top: 96px;
 }
 
+.filters .button {
+  cursor: pointer;
+}
+
 .button-1 {
   width: 69px;
 }
@@ -432,9 +502,11 @@ svg {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 .examples {
   box-shadow: var(--card-shadow);
+  overflow: hidden;
 }
 .services .item {
   /* (100% - (1*24)) - 4 */
@@ -486,6 +558,16 @@ svg {
 }
 
 /* MODAL WINDOW */
+.modal .closebtn {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+
+  top: 24px;
+  right: 24px;
+}
 
 .backdrop {
   position: fixed;
@@ -495,6 +577,10 @@ svg {
   height: 100%;
 
   background-color: rgba(46, 47, 66, 0.4);
+
+  opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -503,14 +589,38 @@ svg {
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-
   min-width: 408px;
   min-height: 544px;
   background-color: var(--white-color);
+  border-radius: 4px;
 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn-container {
+  display: flex;
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  background-color: var(--close-button-modal);
+  border-radius: 50%;
+  border: var(--close-button-border);
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button {
+  display: block;
+  width: 8px;
+  height: 8px;
 }

@@ -26,7 +26,9 @@
           >
 
           <ul class="main-nav list">
-            <li class="item"><a href="./index.html" class="link">Studio</a></li>
+            <li class="item">
+              <a href="./index.html" class="link current-page">Studio </a>
+            </li>
             <li class="item">
               <a href="./portfolio.html" class="link">Portfolio</a>
             </li>
@@ -48,11 +50,21 @@
       <section class="hero overlay">
         <div class="container hero-content">
           <h1 class="title">Effective Solutions<br />for Your Business</h1>
-          <a href="" class="hero-button link" data-modal-open>Order Service</a>
+          <button class="hero-button link" data-modal-open>
+            Order Service
+          </button>
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button type="button" data-modal-close>CLOSE WINDOW</button>
+            <button class="closebtn" data-modal-close>
+              <div class="close-btn-container">
+                <svg class="close-button">
+                  <use
+                    href="./images/symbol-defs.svg#icon-close-backdrop"
+                  ></use>
+                </svg>
+              </div>
+            </button>
           </div>
         </div>
       </section>
