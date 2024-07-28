@@ -24,7 +24,6 @@
           <a href="index.html" class="logo-text link"
             ><span class="logo">Web</span>Studio</a
           >
-
           <ul class="main-nav list">
             <li class="item">
               <a href="./index.html" class="link current-page">Studio </a>
@@ -65,6 +64,87 @@
                 </svg>
               </div>
             </button>
+
+            <form class="modal-form">
+              <h3 class="topic">
+                Leave your contacts and we will call you back
+              </h3>
+              <p class="form-field">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-input"
+                  placeholder=" "
+                />
+                <label for="name" class="form-label text"> Name</label>
+                <svg class="icon-modal">
+                  <use
+                    href="./images/symbol-defs.svg#icon-name"
+                    width="18px"
+                    height="18px"
+                  ></use>
+                </svg>
+              </p>
+
+              <p class="form-field">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  class="form-input"
+                  placeholder=" "
+                />
+                <label for="tel" class="form-label text">Phone</label>
+                <svg class="icon-modal">
+                  <use
+                    href="./images/symbol-defs.svg#icon-phone"
+                    width="18px"
+                    height="18px"
+                  ></use>
+                </svg>
+              </p>
+
+              <p class="form-field">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                  placeholder=" "
+                />
+                <label for="email" class="form-label text">Email</label>
+                <svg class="icon-modal">
+                  <use
+                    href="./images/symbol-defs.svg#icon-email"
+                    width="18px"
+                    height="18px"
+                  ></use>
+                </svg>
+              </p>
+
+              <p class="form-field">
+                <label for="comment" class="text">Comment</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  placeholder="Text input"
+                  rows="8"
+                ></textarea>
+              </p>
+
+              <p>
+                <input type="checkbox" name="agree" id="agree" />
+                <label for="agree" class="text"
+                  >I accept the terms and conditions of the
+                  <a href="">Privacy Policy</a></label
+                >
+              </p>
+
+              <div class="button-send">
+                <button type="button" class="modal-btn-send">Send</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -382,6 +462,19 @@
                 </svg>
               </a>
             </div>
+          </div>
+          <div class="subscribe">
+            <h3 class="title">Subscribe</h3>
+            <form>
+              <label for="email" class="text"></label>
+              <input type="email" name="email" id="email" class="email-input" />
+              <button class="send">
+                <h3 class="title">Subscribe</h3>
+                <svg>
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
