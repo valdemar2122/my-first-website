@@ -64,87 +64,69 @@
                 </svg>
               </div>
             </button>
-
-            <form class="modal-form">
-              <h3 class="topic">
+            <form class="form form-container">
+              <h3 class="form-title">
                 Leave your contacts and we will call you back
               </h3>
-              <p class="form-field">
+              <label class="label">
                 <input
                   type="text"
                   name="name"
-                  id="name"
                   class="form-input"
                   placeholder=" "
                 />
-                <label for="name" class="form-label text"> Name</label>
-                <svg class="icon-modal">
-                  <use
-                    href="./images/symbol-defs.svg#icon-name"
-                    width="18px"
-                    height="18px"
-                  ></use>
+                <span class="form-label">Name</span>
+                <svg class="label-icon">
+                  <use href="./images/symbol-defs.svg#icon-name"></use>
                 </svg>
-              </p>
+              </label>
 
-              <p class="form-field">
-                <input
+              <label class="label"
+                ><input
                   type="tel"
-                  name="tel"
-                  id="tel"
+                  name="phone"
                   class="form-input"
                   placeholder=" "
-                />
-                <label for="tel" class="form-label text">Phone</label>
-                <svg class="icon-modal">
-                  <use
-                    href="./images/symbol-defs.svg#icon-phone"
-                    width="18px"
-                    height="18px"
-                  ></use>
+                /><span class="form-label">Phone</span>
+                <svg class="label-icon">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
                 </svg>
-              </p>
+              </label>
 
-              <p class="form-field">
-                <input
+              <label class="label"
+                ><input
                   type="email"
                   name="email"
-                  id="email"
                   class="form-input"
                   placeholder=" "
-                />
-                <label for="email" class="form-label text">Email</label>
-                <svg class="icon-modal">
-                  <use
-                    href="./images/symbol-defs.svg#icon-email"
-                    width="18px"
-                    height="18px"
-                  ></use>
+                /><span class="form-label">Email</span>
+                <svg class="label-icon">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
                 </svg>
-              </p>
-
-              <p class="form-field">
-                <label for="comment" class="text">Comment</label>
+              </label>
+              <label class="comment-label">
+                <span class="comment">Comment</span>
                 <textarea
-                  name="comment"
-                  id="comment"
-                  placeholder="Text input"
+                  name="field"
                   rows="8"
+                  placeholder="Text input"
                 ></textarea>
-              </p>
-
-              <p>
-                <input type="checkbox" name="agree" id="agree" />
-                <label for="agree" class="text"
-                  >I accept the terms and conditions of the
-                  <a href="">Privacy Policy</a></label
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="checkbox" class="checkbox" />
+                <span class="icon-wrapper">
+                  <svg class="checkbox-icon">
+                    <use href="./images/symbol-defs.svg#icon-done"></use>
+                  </svg>
+                </span>
+                <span class="policy"
+                  >I accept the terms and conditions of the Privacy Policy</span
                 >
-              </p>
-
-              <div class="button-send">
-                <button type="button" class="modal-btn-send">Send</button>
-              </div>
+              </label>
             </form>
+            <button type="submit" class="submit-btn form-container">
+              Send
+            </button>
           </div>
         </div>
       </section>
