@@ -14,32 +14,79 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Header-->
     <header>
       <div class="container">
         <nav class="site-nav">
-          <a href="index.html" class="logo-text link"
-            ><span class="logo">Web</span>Studio</a
+          <a href="index.html" class="company-logo"
+            ><span class="logo-color">WEB</span>STUDIO</a
           >
-          <ul class="main-nav list">
-            <li class="item">
-              <a href="./index.html" class="link current-page">Studio </a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Portfolio</a>
-            </li>
-            <li class="item"><a href="" class="link">Contacts</a></li>
-          </ul>
+          <div class="menu-container">
+            <button type="button" class="menu-close close-menu">
+              <svg class="close-icon" aria-label="mobile-menu switcher">
+                <use
+                  class="menu"
+                  href="./images/symbol-defs.svg#icon-close-backdrop"
+                ></use>
+              </svg>
+            </button>
+            <ul class="navigation list menu-burger-container">
+              <li class="item">
+                <a href="./index.html" class="link current-page">Studio </a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Portfolio</a>
+              </li>
+              <li class="item"><a href="" class="link">Contacts</a></li>
+            </ul>
 
-          <ul class="contact-info list">
-            <li class="item"><a href="" class="link">info@devstudio.com</a></li>
-            <li class="item">
-              <a href="" class="link">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
+            <ul class="contact-info list menu-burger-container">
+              <li class="item">
+                <a href="" class="link mail">info@devstudio.com</a>
+              </li>
+              <li class="item">
+                <a href="" class="link tel">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+            <div class="social-icons-menu">
+              <a href="" class="icon-bg-menu">
+                <svg class="social-icon-menu">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="" class="icon-bg-menu">
+                <svg class="social-icon-menu">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="" class="icon-bg-menu">
+                <svg class="social-icon-menu">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="" class="icon-bg-menu">
+                <svg class="social-icon-menu">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="menu-burger open-menu"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg class="burger-menu-icons" aria-label="mobile-menu switcher">
+              <use
+                class="menu"
+                href="./images/symbol-defs.svg#icon-hamburger"
+              ></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -48,23 +95,22 @@
     <main>
       <section class="hero overlay">
         <div class="container hero-content">
-          <h1 class="title">Effective Solutions<br />for Your Business</h1>
+          <h1 class="title">
+            Effective Solutions<br />
+            For Your Business
+          </h1>
           <button class="hero-button link" data-modal-open>
             Order Service
           </button>
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="closebtn" data-modal-close>
-              <div class="close-btn-container">
-                <svg class="close-button">
-                  <use
-                    href="./images/symbol-defs.svg#icon-close-backdrop"
-                  ></use>
-                </svg>
-              </div>
+            <button class="close-btn" data-modal-close>
+              <svg class="close-button">
+                <use href="./images/symbol-defs.svg#icon-close-backdrop"></use>
+              </svg>
             </button>
-            <form class="form form-container">
+            <form class="form-container">
               <h3 class="form-title">
                 Leave your contacts and we will call you back
               </h3>
@@ -131,7 +177,7 @@
         </div>
       </section>
 
-      <section class="section no-padding about">
+      <section class="section features">
         <div class="container">
           <ul class="features-list list">
             <li class="item">
@@ -189,7 +235,7 @@
         </div>
       </section>
 
-      <section class="section no-padding">
+      <section class="section reviews">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="devices list">
@@ -205,15 +251,15 @@
           </ul>
         </div>
       </section>
+
       <section class="section workers">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="workers list">
             <li class="item">
               <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/worker1.jpg" alt="worker" />
-                </div>
+                <img src="./images/worker1.jpg" alt="worker" />
+
                 <div class="worker-card">
                   <h3 class="title">Mark Guerrero</h3>
                   <p class="text">Product Designer</p>
@@ -369,7 +415,7 @@
         </div>
       </section>
 
-      <section class="section customers no-padding">
+      <section class="section customers">
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <div class="customers-icons">
@@ -408,19 +454,19 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-description">
-            <a href="index.html" class="logo-text-footer link"
-              ><span class="logo">Web</span>Studio</a
+          <div class="footer-description item">
+            <a href="index.html" class="company-logo"
+              ><span class="logo-color">WEB</span>STUDIO</a
             >
             <p class="text">
               Increase the flow of customers and<br />sales for your business
               with digital<br />marketing & growth solutions.
             </p>
           </div>
-          <div class="contacts">
+          <div class="contact item">
             <h3 class="title">Social media</h3>
             <div class="social-icons iconsfooter">
               <a href="" class="icon-bg">
@@ -445,22 +491,29 @@
               </a>
             </div>
           </div>
-          <div class="subscribe">
+          <div class="subscribe item">
             <h3 class="title">Subscribe</h3>
             <form>
               <label for="email" class="text"></label>
-              <input type="email" name="email" id="email" class="email-input" />
-              <button class="send">
-                <h3 class="title">Subscribe</h3>
-                <svg>
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </button>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="email-input"
+                placeholder="E-mail"
+              />
             </form>
+            <button class="send">
+              <p class="title">Subscribe</p>
+              <svg class="send-icon">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

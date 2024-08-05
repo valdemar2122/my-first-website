@@ -1,0 +1,22 @@
+/* LOGO */
+
+@import "./_variables.scss";
+.company-logo {
+  color: $accent-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  text-decoration: none;
+  @media screen and (max-width: $max-tablet) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+.footer .company-logo {
+  color: $white-color;
+}
+
+.logo-color {
+  color: $button-purple-color;
+}

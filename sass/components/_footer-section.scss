@@ -1,0 +1,149 @@
+@import "./variables";
+@import "../utils/breakpoints";
+
+.footer {
+  text-align: center;
+  background-color: $accent-color;
+  position: relative;
+}
+
+.footer .title {
+  color: $white-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.footer-description .text {
+  color: $grey-text-color;
+  margin: 0;
+  margin-top: 16px;
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: $max-desktop) {
+    margin-bottom: 72px;
+  }
+}
+
+// .footer-content {
+//   display: flex;
+// }
+.footer-description {
+  margin: 0;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts {
+  margin-top: 72px;
+}
+
+.subscribe {
+  position: relative;
+  margin-top: 72px;
+}
+
+.subscribe .email-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid $white-color;
+  border-radius: 4px;
+  background-color: $accent-color;
+  opacity: 0.3;
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.send {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 165px;
+  height: 40px;
+  background-color: $button-purple-color;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  margin-top: 16px;
+}
+
+.send .send-icon {
+  width: 24px; /* Adjust the icon size */
+  height: 24px; /* Adjust the icon size */
+}
+
+.send .title {
+  margin: 0;
+}
+
+@media screen and (min-width: $tablet) {
+  .footer {
+    text-align: left;
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: $max-desktop) {
+      margin-left: 92px;
+      margin-right: 92px;
+    }
+  }
+
+  .footer-content .item {
+    @media screen and (max-width: $max-desktop) {
+      flex-basis: calc((100% - 24px) / 2);
+      margin-right: 24px;
+    }
+
+    @media screen and (max-width: $max-desktop) {
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .send {
+    left: 100%;
+    bottom: 0;
+    margin-left: 24px;
+    transform: none;
+  }
+  .contacts {
+    margin: 0;
+  }
+
+  .subscribe .email-input {
+    width: 264px;
+  }
+
+  .footer .social-icons {
+    justify-content: left;
+  }
+  .subscribe {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .footer-content {
+    flex-wrap: nowrap;
+  }
+  .subscribe.item {
+    height: 80px;
+  }
+  .footer-description {
+    margin-right: 120px;
+  }
+  .contact.item {
+    margin-right: 80px;
+  }
+}

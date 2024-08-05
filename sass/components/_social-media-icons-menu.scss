@@ -1,0 +1,35 @@
+@import "./variables";
+
+.social-icons-menu {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  justify-content: center;
+
+  @media screen and (min-width: $max-tablet) {
+    display: none;
+  }
+  @media screen and (max-width: $max-tablet) {
+    margin-top: 48px;
+    gap: 56px;
+  }
+}
+
+.icon-bg-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: $button-purple-color;
+  border-radius: 50%;
+}
+
+.social-icon-menu {
+  width: 16px;
+  height: 16px;
+  @media screen and (max-width: $tablet) {
+    width: 24px;
+    height: 24px;
+  }
+}

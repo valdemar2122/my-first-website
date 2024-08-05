@@ -1,0 +1,64 @@
+@import "./variables";
+@import "../utils/breakpoints";
+/* HERO */
+.overlay {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: $max-tablet) {
+    height: 432px;
+  }
+  @media screen and (min-width: $tablet) {
+    height: 436px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 600px;
+  }
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $white-color;
+  font-weight: 700;
+  line-height: 1.07;
+  margin-bottom: 48px;
+  font-size: 56px;
+  @media screen and (max-width: $max-tablet) {
+    font-size: 36px;
+    min-width: 360px;
+  }
+  @media screen and (min-width: $tablet) {
+    min-width: 496px;
+  }
+}
+
+.hero-button {
+  padding: 16px 32px;
+  color: $white-color;
+  background-color: $button-purple-color;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

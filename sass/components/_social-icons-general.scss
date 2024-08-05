@@ -1,0 +1,28 @@
+@import "./variables";
+
+.social-icons {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: $button-purple-color;
+  border-radius: 50%;
+}
+
+.social-icons.iconsfooter .social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+}
