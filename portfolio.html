@@ -24,23 +24,71 @@
           <a href="index.html" class="company-logo"
             ><span class="logo-color">WEB</span>STUDIO</a
           >
+          <div class="menu-container">
+            <button type="button" class="menu-close close-menu">
+              <svg class="close-icon" aria-label="mobile-menu switcher">
+                <use
+                  class="menu"
+                  href="./images/symbol-defs.svg#icon-close-backdrop"
+                ></use>
+              </svg>
+            </button>
+            <ul class="navigation list menu-burger-container">
+              <li class="item">
+                <a href="./index.html" class="link">Studio </a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link current-page"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="item"><a href="" class="link">Contacts</a></li>
+            </ul>
 
-          <ul class="navigation list">
-            <li class="item">
-              <a href="./index.html" class="link">Studio </a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current-page">Portfolio</a>
-            </li>
-            <li class="item"><a href="" class="link">Contacts</a></li>
-          </ul>
-
-          <ul class="contact-info list">
-            <li class="item"><a href="" class="link">info@devstudio.com</a></li>
-            <li class="item">
-              <a href="" class="link">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
+            <ul class="contact-info list menu-burger-container">
+              <li class="item">
+                <a href="" class="link mail">info@devstudio.com</a>
+              </li>
+              <li class="item">
+                <a href="" class="link tel">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+            <div class="social-icons-menu">
+              <a href="" class="icon-bg-menu">
+                <svg class="social-icon-menu">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="" class="icon-bg-menu">
+                <svg class="social-icon-menu">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="" class="icon-bg-menu">
+                <svg class="social-icon-menu">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="" class="icon-bg-menu">
+                <svg class="social-icon-menu">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="menu-burger open-menu"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg class="burger-menu-icons" aria-label="mobile-menu switcher">
+              <use
+                class="menu"
+                href="./images/symbol-defs.svg#icon-hamburger"
+              ></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -71,7 +119,7 @@
 
       <section class="section container no-padding">
         <ul class="services list">
-          <li class="item">
+          <li class="item examples">
             <div class="examples">
               <div class="img-thumb">
                 <img src="./images/img-1.jpg" alt="Banking App Interface" />
@@ -219,10 +267,10 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-description">
+          <div class="footer-description item">
             <a href="index.html" class="company-logo"
               ><span class="logo-color">WEB</span>STUDIO</a
             >
@@ -231,7 +279,7 @@
               with digital<br />marketing & growth solutions.
             </p>
           </div>
-          <div class="contacts">
+          <div class="contact item">
             <h3 class="title">Social media</h3>
             <div class="social-icons iconsfooter">
               <a href="" class="icon-bg">
@@ -256,21 +304,29 @@
               </a>
             </div>
           </div>
-          <div class="subscribe">
+          <div class="subscribe item">
             <h3 class="title">Subscribe</h3>
             <form>
               <label for="email" class="text"></label>
-              <input type="email" name="email" id="email" class="email-input" />
-              <button class="send">
-                <h3 class="title">Subscribe</h3>
-                <svg>
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </button>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="email-input"
+                placeholder="E-mail"
+              />
             </form>
+            <button class="send">
+              <p class="title">Subscribe</p>
+              <svg class="send-icon">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
